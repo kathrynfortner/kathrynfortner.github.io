@@ -95,13 +95,21 @@
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">ABOUT ME</h2>
+                <div class="col-lg-8 col-lg-offset-2 text-left">
+                    <h2 class="section-heading">about kathryn fortner</h2>
                     <hr class="light">
-                    <p class="text-faded">
-                    Oriole a watchful during insane meticulously reluctant goodheartedly one far crud more beyond much jeepers gladly that like lynx flapped wildebeest unblushingly trustfully intrepidly ostrich up when prior dog far far reindeer and wow on much a far arguably lemming darn crude eagle hatchet one.
-Some gibbered much cantankerous knelt belated lemur rang next goldfinch one egregious lion crane but mounted thirstily far far across upon squinted near lamely more cliquishly far much sorely.
-Oh much awfully capybara willful lynx yikes teasing so and and in inset gaily depending past far well much incessant exorbitantly monogamous some steady jeepers unscrupulous beguiling less hey that aside overabundantly.
+                    <div class="wow slideInLeft">
+                    <img src="img/about1.jpg"> 
+					</div>
+                    <div class="wow slideInRight">
+                    <img src="img/about2.jpg"> 
+					</div>
+                    <div class="wow slideInLeft">
+                    <img src="img/about3.jpg"> 
+					</div>
+                    <div class="wow slideInRight">
+                    <img src="img/about4.jpg"> 
+					</div>
 <br>
       				</p>
                     <center><a href="#resume" class="btn btn-default btn-xl page-scroll">Resume</a></center>
@@ -261,19 +269,38 @@ Oh much awfully capybara willful lynx yikes teasing so and and in inset gaily de
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-lg-8 col-lg-offset-2 text-left">
                     <h2 class="section-heading">CONTACT ME</h2>
-                    <hr class="primary">
                     <p>Feel free to shoot me any questions you may have!</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p><a href="tel:971-998-6188">971.998.6188</a></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:kathryn.fortner@gmail.com">kathryn.fortner@gmail.com</a></p>
-                </div>
+                <body>
+                    <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <form role="form" id="contactForm">
+                         <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="name" class="h4">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="email" class="h4">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="h4 ">Message</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" id="form-submit" class="btn pull-right ">
+                        <h4>submit &nbsp;<i class="fa fa-envelope-o wow bounceIn" data-wow-delay=".1s"></i></h4></button>
+                <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+
+                        </form>
+                    </div>
+                    </div>
+                    </body>
+                    <script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+                    <script type="text/javascript" src="js/form-scripts.js"></script>
             </div>
         </div>
     </section>
@@ -287,7 +314,17 @@ Oh much awfully capybara willful lynx yikes teasing so and and in inset gaily de
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script> wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();</script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>

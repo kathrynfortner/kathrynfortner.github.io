@@ -52,7 +52,7 @@
                     <span class="icon-bar"></span>
                 </button>
               <div class="animated fadeIn">
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="../../img/logo-white.gif" width="27"></a>
+                <a class="navbar-brand" href="../../index.html"><img src="../../img/logo-white.gif" width="27"></a>
                 <a class="navbar-brand" href="https://www.facebook.com/kathryn.fortner"><i class="fa fa-facebook"></i></a>
                 <a class="navbar-brand" href="https://twitter.com/kay_fort"><i class="fa fa-twitter"></i></a>
                 <a class="navbar-brand" href="https://www.instagram.com/kfortyy/"><i class="fa fa-instagram"></i></a>
@@ -89,14 +89,14 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header animated fadeIn">Women In Flight
-                    <small>Fall 2015</small>
+                    <small style="color:#ECECEC;">Fall 2015</small>
                 </h1>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Portfolio Item Row -->
-        <div class="row">
+        <div id="content" class="row">
 
             <div class="col-md-8 animated fadeInLeftBig">
                 <img class="img-responsive" src="../../img/portfolio/WIF/brochureOutside.jpg" alt=""><br>
@@ -108,41 +108,37 @@
                 <p>Designed a brochure to raise awareness and support of women's sports programs at the University of Oregon. </p>
                 <h3>Project Details</h3>
                 <ul>
+                	<li>Assigned by UO Marketing - David Georgieff, Creative Services Multimedia Coordinator</li>
                     <li>Was distributed to over 8,000 major donors</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Consectetur</li>
-                    <li>Adipiscing Elit</li>
                 </ul>
             </div>
-
         </div>
         <!-- /.row -->
 
         <!-- Related Projects Row -->
-        <div class="row">
-
+        <div id="container" class="row">
             <div class="col-lg-12">
                 <h3 class="page-header">Related Projects</h3>
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
+                <a href="javascript:void(0);" onClick="getContent(1)">
                 	<img class="img-responsive portfolio-item" src="../../img/portfolio/WIF/Poster-mini.jpg" alt="">
                 </a>
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
+                <a href="javascript:void(0);" onClick="getContent(2)">
                     <img class="img-responsive portfolio-item" src="../../img/portfolio/WIF/Softball Mailer-mini.jpg" alt="">
                 </a>
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
+                <a href="javascript:void(0);" onClick="getContent(3)">
                     <img class="img-responsive portfolio-item" src="../../img/portfolio/WIF/Women's Symposium-mini.jpg" alt="">
                 </a>
             </div>
-
+			</div>
 
         </div>
         <!-- /.row -->
@@ -153,7 +149,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; kathrynfortner.com 2015</p>
+                  
                 </div>
             </div>
             <!-- /.row -->
@@ -172,6 +168,7 @@
     <script src="../../js/jquery.easing.min.js"></script>
     <script src="../../js/jquery.fittext.js"></script>
     <script src="../../js/wow.min.js"></script>
+    <script type='text/javascript' src="js/dynamicpage.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="../../js/creative.js"></script>

@@ -280,16 +280,18 @@
                          <div class="row">
                             <div class="form-group col-sm-6">
                                 <label for="name" class="h4">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="Please enter your information">
+                                <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="email" class="h4">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required data-error="Please enter your information">
+                                <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="message" class="h4 ">Message</label>
-                            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required data-error="Please enter your information"></textarea>
                         </div>
                         <button type="submit" id="form-submit" class="btn pull-right ">
                         <h4>submit &nbsp;<i class="fa fa-envelope-o wow bounceIn" data-wow-delay=".1s"></i></h4></button>
@@ -300,7 +302,6 @@
                     </div>
                     </body>
                     <script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-                    <script type="text/javascript" src="js/form-scripts.js"></script>
             </div>
         </div>
     </section>

@@ -1,16 +1,13 @@
 <?php
 
-// Contact subject
-$subject ="$subject"; 
-
-// Details
-$message="$detail";
-
-// Mail of sender
-$mail_from="$customer_mail"; 
-
 // From 
 $header="from: $name <$mail_from>";
+
+// Message
+$message="$message";
+
+// Mail of sender
+$mail_from="$email"; 
 
 // Enter your email address
 $to ='kathryn.fortner@gmail.com';

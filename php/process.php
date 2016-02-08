@@ -1,24 +1,64 @@
 <?php
+/* Set e-mail recipient */
+$myemail = "kathryn.fortner@gmail.com";
 
-// From 
-$header="from: $name <$mail_from>";
+/* Check all form inputs using check_input function */
+$name = check_input($_POST['name']);
+$email = check_input($_POST['email']);
+$message = check_input($_POST['message']);
 
-// Message
-$message="$message";
-
-// Mail of sender
-$mail_from="$email"; 
-
-// Enter your email address
-$to ='kathryn.fortner@gmail.com';
-$send_contact=mail($to,$subject,$message,$header);
-
-// Check, if message sent to your email 
-// display message "We've recived your information"
-if($send_contact){
-echo "We've recived your contact information";
+/* If e-mail is not valid show error message */
+if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
+{
+show_error("Invalid e-mail address");
 }
-else {
-echo "ERROR";
+/* Let's prepare the message for the e-mail */
+
+$subject = "Someone has sent you a message";
+
+$message = "
+
+Someone has sent you a message using your contact form:
+
+Name: $name
+Email: $email
+Message: $message
+
+";
+
+/* Send the message using mail() function */
+mail($myemail, $subject, $message);
+
+/* Redirect visitor to the thank you page */
+header('Location: http://address-of-confirmation-page.html');
+exit();
+
+/* Functions we used */
+function check_input($data, $problem='')
+{
+$data = trim($data);
+$data = stripslashes($data);
+$data = htmlspecialchars($data);
+if ($problem && strlen($data) == 0)
+{
+show_error($problem);
+}
+return $data;
+}
+
+function show_error($myError)
+{
+?>
+<html>
+<body>
+
+<p>Please correct the following error:</p>
+<strong><?php echo $myError; ?></strong>
+<p>Hit the back button and try again</p>
+
+</body>
+</html>
+<?php
+exit();
 }
 ?>

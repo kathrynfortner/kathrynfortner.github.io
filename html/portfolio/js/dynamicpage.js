@@ -13,6 +13,7 @@ $(document).ready(function() {
     $('#projects a').click(function(){
      
     var toLoad = $(this).attr('href')+' #content';
+    $('#content').hide('fast',loadContent);
     window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
     function loadContent() {
         $('#content').load(toLoad,'',showNewContent());

@@ -1,30 +1,16 @@
-$(document).ready(function() {
-    "use strict"; 
-    // Check for hash value in URL
-    var hash = window.location.hash.substr(1);
-    var href = $('#projects a').each(function(){
-        var href = $(this).attr('href');
-        if(hash===href.substr(0,href.length-5)){
-            var toLoad = hash+'.html #content';
-            $('#content').load(toLoad);
-        } 
-    });
-     
-    $('#projects a').click(function(){
-     
-    var toLoad = $(this).attr('href')+' #content';
-    $('#content').hide('normal',loadContent);
-    window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
-    function loadContent() {
-        $('#content').load(toLoad,'',showNewContent());
-    }
-    function showNewContent() {
-        $('#content').show('normal',hideLoader());
-    }
-    function hideLoader() {
-        $('#load').fadeOut('normal');
-    }
-    return false;
-     
-    });
+var newHash     = '',
+   $mainContent = $('#content');
+
+$('#projects').delegate('a', 'click', function() {
+	"use strict";
+	window.location.hash = $(this).attr('href');
+	return false;
+});
+
+// Not all browsers support hashchange
+// For older browser support: http://benalman.com/projects/jquery-hashchange-plugin/
+$(window).bind('hashchange', function() {
+	"use strict";
+	newHash = window.location.hash.substr(1);
+	$mainContent.load(newHash + " #content > *");
 });

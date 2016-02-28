@@ -479,3 +479,65 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.slider-wrap {
+  width: 700px;
+  height: 438px;
+  margin: 20px auto;
+}
+.slider {
+  overflow-x: scroll;
+}
+.holder {
+  width: 300%;
+}
+.slide {
+  float: left;
+  width: 700px;
+  height: 438px;
+  position: relative;
+  background-position: 0;
+}
+
+#slide-0 {
+  background-image: url(../img/portfolio/WTD/FB%20vs%20Cal_concourse.jpg);
+  background-repeat: no-repeat;
+}
+#slide-1 {
+  background-image: url(../img/portfolio/WTD/FB%20vs%20USC.jpg);
+  background-repeat: no-repeat;
+}
+#slide-2 {
+  background-image: url(../img/portfolio/WTD/FB%20vs.%20Eastern%20Washington.jpg);
+  background-repeat: no-repeat;
+}
+
+#slide-00 {
+	background-image:url(../img/portfolio/WTD/Ducks-vs.-Tigers-8.21.15.jpg);
+	}
+	
+#slide-01 {
+	background-image: url(../img/portfolio/WTD/Vs-Fresno-State-8.30.15.jpg);
+	}
+	
+#slide-02 {
+	background-image: url(../img/portfolio/WTD/Vs.-San-Francisco-8.28.15.jpg);
+	}
+
+.slider-nav {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+.slider-nav a {
+  width: 15px;
+  height: 15px;
+  margin-left:5px;
+  display: inline-block;
+  background: #ddd;
+  overflow: hidden;
+  text-indent: -9999px;
+  border-radius: 50%;
+}
+.slider-nav a.active {
+  background: #999;
+}

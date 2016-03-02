@@ -69,6 +69,7 @@ p {
 
 #projects img {
 	opacity: 0.75;
+	margin-bottom:10px;
 }
 
 #projects img:hover {

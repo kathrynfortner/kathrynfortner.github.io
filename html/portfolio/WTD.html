@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css">
 
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Satisfy|Overlock:400,700|Oswald' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300|Satisfy|Overlock:400,700|Oswald" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../../font-awesome/css/font-awesome.css" type="text/css">
 
     <!-- Plugin CSS -->
@@ -97,28 +97,70 @@
 
         <!-- Portfolio Item Row -->
         <div class="row">
-        <div class="col-md-8">
-            <div class="slider-wrap">
-              <div class="slider" id="slider">
-                <div class="holder">
-                  <div class="slide" id="slide-0"><span class="temp"></span></div>
-                  <div class="slide" id="slide-1"><span class="temp"></span></div>
-                  <div class="slide" id="slide-2"><span class="temp"></span></div>
-                </div>
-              </div>
-              <nav class="slider-nav"> 
-              	<a href="#slide-0">Slide 1</a> 
-                <a href="#slide-1">Slide 2</a> 
-                <a href="#slide-2">Slide 3</a>
-              </nav>
-            </div>
-            </div>
+        <div class="col-md-8 animated fadeIn">
+	<!-- Slider Setup -->
+	
+		<input checked type="radio" name="slider" id="slide1" />
+		<input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+	
+	
+		<!-- The Slider -->
+		
+		<div id="slides">
+		
+			<div id="overflow">
+			
+				<div class="inner">
+				
+					<article>
+						<div class="info"></div>
+						<img alt="slide1" src="../../img/portfolio/WTD/FB vs Cal_concourse.jpg"/>
+					</article>
+					
+					<article>
+						<div class="info"></div>
+						<img alt="slide2" src="../../img/portfolio/WTD/FB vs USC.jpg" />
+					</article>
+                    
+ 					<article>
+						<div class="info"></div>
+						<img alt="slide3" src="../../img/portfolio/WTD/FB vs. Eastern Washington.jpg"/>
+					</article>
+					
+				</div> <!-- .inner -->
+				
+			</div> <!-- #overflow -->
+		
+		</div> <!-- #slides -->
+	
+	
+		<!-- Controls and Active Slide Display -->
+	
+		<div id="controls">
+
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+            <label for="slide3"></label>
+		
+		</div> <!-- #controls -->
+		
+		<div id="active">
+
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+            <label for="slide3"></label>
+            
+			</div>
+		</div> <!-- #active -->
 
             <div class="col-md-4  animated fadeInRightBig"><br>
                 <h3>Oregon Ducks Football</h3>
-                <p>A few of the many Game Day advertisements I created this Fall. These advertisements were premade a few weeks prior to the game date, in efforts of spreading awareness and increasing football ticket sales.</p>
+                <p>Here are a few of the many <i>Game Day</i> advertisements I created this fall. These advertisements were premade, a few weeks prior to the game date, in aim to spread awareness and increase football ticket sales. </p>
                 <h3>Project Details</h3>
                 <ul>
+                	<li>Assigned by David Georgieff - Creative Services Multimedia Coordinator</li>
+                    <li>Created with Photoshop CC</li>
                     <li>Displayed on TV's within the concourse of Matthew Knight Arena</li>
                     <li>Displayed on marquee board in front of MKA</li>
                 </ul>
@@ -136,7 +178,7 @@
 		<div id="projects">
             <div class="col-sm-3 col-xs-6">
                 <a href="wtd1.html">
-                    <img class="img-responsive portfolio-item" src="../../img/portfolio/WTD/Vs-Fresno-State-8.30.15-small.jpg" alt="">
+                    <img class="img-responsive portfolio-item" src="../../img/portfolio/WTD/Ducks-vs.-Tigers-8.21.15-small.jpg" alt="">
                 </a>
             </div>
 
@@ -149,12 +191,6 @@
             <div class="col-sm-3 col-xs-6">
                 <a href="wtd3.html">
                     <img class="img-responsive portfolio-item" src="../../img/portfolio/WTD/VB_vs._Colorado_10.2.15.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="wtd4.html">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
                 </a>
             </div>
 		</div>

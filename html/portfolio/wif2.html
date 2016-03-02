@@ -97,11 +97,54 @@
 
         <!-- Portfolio Item Row -->
         <div id="content" class="row">
+		<div class="col-md-8 animated fadeIn">
+		<!-- Slider Setup -->
+	
+		<input checked type="radio" name="slider" id="slide1" />
+		<input type="radio" name="slider" id="slide2" />
+	
+	
+		<!-- The Slider -->
+		
+		<div id="slides">
+		
+			<div id="overflow">
+			
+				<div class="inner">
+				
+					<article>
+						<div class="info"></div>
+						<img alt="slide1" src="../../img/portfolio/WIF/Softball Mailer.jpg"/>
+					</article>
+					
+					<article>
+						<div class="info"></div>
+						<img alt="slide2" src="../../img/portfolio/WIF/Softball.jpg" />
+					</article>
+					
+				</div> <!-- .inner -->
+				
+			</div> <!-- #overflow -->
+		
+		</div> <!-- #slides -->
+	
+	
+		<!-- Controls and Active Slide Display -->
+	
+		<div id="controls">
 
-            <div class="col-md-8 animated fadeInLeftBig">
-                <center><img class="img-responsive" src="../../img/portfolio/WIF/Softball Mailer.jpg" alt=""><br>
-                <img class="img-responsive" src="../../img/portfolio/WIF/Softball.jpg" alt=""></center>
-            </div>
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+		
+		</div> <!-- #controls -->
+		
+		<div id="active">
+
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+            
+			</div>
+		</div> <!-- #active -->
 
             <div class="col-md-4 animated fadeInRightBig">
                <h3>Thank You Mail-Out</h3>

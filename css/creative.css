@@ -67,13 +67,9 @@ p {
     color: rgba(255,255,255,.7);
 }
 
-#projects {
-	margin-left:15px
-}
-
 #projects img {
 	opacity: 0.75;
-	margin-bottom:15px;
+	margin-bottom:20px;
 }
 
 #projects img:hover {

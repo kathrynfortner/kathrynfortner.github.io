@@ -50,8 +50,6 @@
 // Slider Code
 var slider = {
   
-  // Not sure if keeping element collections like this
-  // together is useful or not.
   el: {
     slider: $("#slider"),
     allSlides: $(".slide"),
@@ -60,10 +58,8 @@ var slider = {
   },
   
   timing: 800,
-  slideWidth: 700, // could measure this
+  slideWidth: 700, 
  
-  // In this simple example, might just move the
-  // binding here to the init function
   init: function() {
     this.bindUIEvents();
   },
@@ -77,9 +73,6 @@ var slider = {
     this.el.sliderNav.on("click", "a", function(event) {
       slider.handleNavClick(event, this);
     });
-    // What would be cool is if it had touch
-    // events where you could swipe but it
-    // also kinda snapped into place.
   },
   
   moveSlidePosition: function(event) {

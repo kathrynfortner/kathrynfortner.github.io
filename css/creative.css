@@ -18,6 +18,7 @@ hr {
     max-width: 50px;
     border-color: #4E4E4E;
     border-width: 3px;
+	text-align: left;
 }
 
 hr.light {
@@ -61,6 +62,7 @@ p {
 .bg-dark {
     color: #fff;
     background-color: #222;
+	margin: 0 px;
 }
 
 .text-faded {
